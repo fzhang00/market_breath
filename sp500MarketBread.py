@@ -116,44 +116,45 @@ def updateMarketBreadth_SP500Sector(maDay_int):
     df_MarketBreadth.to_csv(marketBreadthFilePath, index='Date', float_format='% .0f')  
     # print('')
 
-#-----------
-    marketBreadthFilePath = "./sp500_sectors/market_breadth/20MA.csv"
-    df_MarketBreadth = pd.read_csv(marketBreadthFilePath, index_col='Date')
+# TODO delete this section
+# #-----------
+#     marketBreadthFilePath = "./sp500_sectors/market_breadth/20MA.csv"
+#     df_MarketBreadth = pd.read_csv(marketBreadthFilePath, index_col='Date')
     
-    df_MarketBreadth1 = df_MarketBreadth.iloc[0:10, :-1]
-    # df_MarketBreadth1 = (df_MarketBreadth.iloc[0:100, :-1]).to_numpy()
+#     df_MarketBreadth1 = df_MarketBreadth.iloc[0:10, :-1]
+#     # df_MarketBreadth1 = (df_MarketBreadth.iloc[0:100, :-1]).to_numpy()
     
-    # cmap=sb.diverging_palette(20,145, s=60, as_cmap=True)
-    print("")
-    # # heatM = sb.heatmap(df_MarketBreadth, cmap=cmap, annot=True, annot_kws={"size": 6.5}, fmt=".1%",center=0, linewidths=.1)
+#     # cmap=sb.diverging_palette(20,145, s=60, as_cmap=True)
+#     print("")
+#     # # heatM = sb.heatmap(df_MarketBreadth, cmap=cmap, annot=True, annot_kws={"size": 6.5}, fmt=".1%",center=0, linewidths=.1)
     
-    # heatM = sb.heatmap(df_MarketBreadth)
-    # sb.heatmap(df_MarketBreadth1)
+#     # heatM = sb.heatmap(df_MarketBreadth)
+#     # sb.heatmap(df_MarketBreadth1)
     
     
-    fig, ax = plt.subplots(figsize=(14,6))
+#     fig, ax = plt.subplots(figsize=(14,6))
     
-    plt.title('S&P 500 Market Breadth 20 MA Heat Map',fontsize=18)
-    ax.title.set_position([0.5,0.1]) #ax.title.set_position([0.5,1.05])
+#     plt.title('S&P 500 Market Breadth 20 MA Heat Map',fontsize=18)
+#     ax.title.set_position([0.5,0.1]) #ax.title.set_position([0.5,1.05])
     
-    # ax.set_xticks([])
-    sb.heatmap(df_MarketBreadth1, annot=True, fmt="", cmap='RdYlGn', ax=ax)#
+#     # ax.set_xticks([])
+#     sb.heatmap(df_MarketBreadth1, annot=True, fmt="", cmap='RdYlGn', ax=ax)#
 
     
     
-    plt.show()
-    # heatM.figure.savefig("sectoral.png", dpi=800)
+#     plt.show()
+#     # heatM.figure.savefig("sectoral.png", dpi=800)
 
     
-#----------------------------------------------
-# sourceFillpath = "test1.csv"
+# #----------------------------------------------
+# # sourceFillpath = "test1.csv"
 
-# df = pd.read_csv(sourceFillpath, parse_dates=['Date'], index_col='Date') 
-# print (df1)
+# # df = pd.read_csv(sourceFillpath, parse_dates=['Date'], index_col='Date') 
+# # print (df1)
 
-# calMA_SP500Sector(maDay_int = 20, logOn = False)
+# # calMA_SP500Sector(maDay_int = 20, logOn = False)
 
-updateMarketBreadth_SP500Sector(maDay_int=20)
+# updateMarketBreadth_SP500Sector(maDay_int=20)
 
 
   
@@ -162,7 +163,7 @@ updateMarketBreadth_SP500Sector(maDay_int=20)
 
 
 
-        # core.window.Rolling
-        # core.window.ExponentialMovingWindow     
-# >>> xlsx = pd.ExcelFile('file.xls')
-# >>> df = pd.read_excel(xlsx,  'Sheet1')        
+#         # core.window.Rolling
+#         # core.window.ExponentialMovingWindow     
+# # >>> xlsx = pd.ExcelFile('file.xls')
+# # >>> df = pd.read_excel(xlsx,  'Sheet1')        
