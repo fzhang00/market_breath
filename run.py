@@ -1,3 +1,9 @@
+"""
+A top level runner that download and update SP500 stock price and market breath. 
+
+To add more tasks to the top runner, import the function and add it to main()
+"""
+
 from get_sp500_data import download_Update_SaveData_History_all500
 from sp500MarketBread import updateMarketBreadth_SP500Sector
 import os
